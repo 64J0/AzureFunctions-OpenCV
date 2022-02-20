@@ -35,10 +35,6 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     img_edges = extractEdges(
         img_buffer, THRESHOLD1, THRESHOLD2)
 
-    # Tips to debug locally
-    # cv2.imshow('Image edges', img_edges)
-    # cv2.waitKey(0)
-
     img_encoded = cv2.imencode('.jpg', img_edges)
     img_response = img_encoded[1].tobytes()
 
