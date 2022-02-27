@@ -1,5 +1,5 @@
 # Do not include azure-functions-worker as it may conflict with the Azure Functions platform
 
-azure-functions
+azure-functions==1.9.0
 numpy==1.20.1
 opencv-contrib-python==4.5.5.62
